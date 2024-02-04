@@ -7,7 +7,7 @@
   --text-color: #353430;
   --bg-text: #ff8dcb;
   --shadow-color: #ff0070;
-  --border-color:rgba(50, 49, 45, 0.40);
+  --border-color: rgba(50, 49, 45, 0.4);
 }
 
 .theme_light .rec {
