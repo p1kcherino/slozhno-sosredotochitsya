@@ -1,15 +1,14 @@
-
 :root {
- --accent-color: #FF0070;
- --bg-image: url(../images/cover-image-dark.png);
- --bg-color: #000028;
- --title-description: #000028;
- --title-color: #DB00FF;
- --text-color: #F1B2CE;
+  --accent-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --title-description: #000028;
+  --title-color: #db00ff;
+  --text-color: #f1b2ce;
 }
 
 .page.theme_dark {
- color: var(--accent-color);
- background-color: var(--bg-color);
- background-image: var(--bg-image);
+  color: var(--accent-color);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
 }
