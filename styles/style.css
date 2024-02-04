@@ -16,12 +16,12 @@
   font-weight: 400;
   font-size: 18px;
   color: var(--accent-color);
-  background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  max-width: 1024px;
 }
 
 .header {
@@ -31,6 +31,7 @@
   height: 100vh;
   padding: 10px;
   position: relative;
+  min-height: 668px;
 }
 
 .decorated-zone::before {
@@ -60,6 +61,7 @@
   top: 10px;
   right: 30px;
   color: var(--accent-color);
+  text-transform: uppercase;
 }
 
 .rec::after {
@@ -72,7 +74,7 @@
   block-size: 9px;
   border-radius: 50%;
   background-color: var(--bg-text);
-  filter: drop-shadow(0px 0px 4px var(--bg-text));
+  box-shadow: 0px 0px 4px var(--bg-text);
 }
 
 .header__theme-menu {
@@ -145,7 +147,7 @@
   padding-right: 10px;
   padding-bottom: 40px;
   padding-left: 10px;
-  background: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .block__content_1 {
@@ -184,6 +186,10 @@
   text-shadow: 2px 2px 0px var(--bg-text);
 }
 
+.text-link:focus-visible {
+  outline: none;
+}
+
 .text-link:hover {
   text-decoration: underline;
 }
@@ -213,6 +219,7 @@
   justify-content: center;
   height: 100vh;
   background-color: var(--bg-color);
+  min-height: 668px;
 }
 
 .footer_title {
@@ -224,7 +231,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
-  .header {
+ 
+ .page {
+  max-width: 768px;
+ }
+ 
+ .header {
     padding: 20px;
   }
 
@@ -261,7 +273,7 @@
     padding: 40px 20px;
     gap: 60px;
   }
-  .block-1 {
+  .block-why {
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 472px;
@@ -271,11 +283,11 @@
     padding-top: 20px;
   }
 
-  .block-2 > .titile-content {
-    width: 236px;
+  .block-what > .titile-content {
+    max-width: 236px;
   }
 
-  .block-3 {
+  .block-now {
     display: grid;
     grid-template-columns: 1fr 472px;
   }
@@ -386,7 +398,7 @@
     margin: 0;
   }
 
-  .block-1 {
+  .block-why {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 649px;
@@ -396,22 +408,22 @@
     margin: 10px 0 20px 0;
   }
 
-  .block-2 > .titile-content {
+  .block-what > .titile-content {
     width: 315px;
   }
 
-  .block-2 > .text-content {
+  .block-what > .text-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .block-2 {
+  .block-what {
     display: grid;
     gap: 20px;
   }
 
-  .block-3 {
+  .block-how {
     display: grid;
     grid-template-columns: 1fr 649px;
   }
