@@ -1,4 +1,4 @@
-.page.theme_light {
+:root .theme_light {
   --accent-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
@@ -6,10 +6,26 @@
   --title-color: #ffc2e6;
   --text-color: #353430;
   --bg-text: #ff8dcb;
-  --shadow-color: #ff0070;
   --border-color: rgba(50, 49, 45, 0.4);
 }
 
 .theme_light .rec {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+    --title-description: #353430;
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+    --bg-text: #ff8dcb;
+    --border-color: rgba(50, 49, 45, 0.4);
+  }
+
+  .page.theme_auto .rec {
+    display: none;
+  }
 }
